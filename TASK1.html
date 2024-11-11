@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="landing-page">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to Our Amazing Offer!</h1>
+            <p class="subheadline">Get exclusive access to a limited-time offer and save big on your next purchase!</p>
+        </header>
+
+        <!-- Call to Action (CTA) -->
+        <div class="cta-section">
+            <a href="#form" class="cta-button">Claim Your Offer Now</a>
+        </div>
+
+        <!-- Lead Capture Form -->
+        <section id="form" class="form-section">
+            <h2>Sign Up Today and Get Started</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* General Landing Page Styles */
+.landing-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    margin-top: 40px;
+}
+
+.cta-button {
+    background-color: #FF6347; /* Tomato */
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E53E28;
+}
+
+/* Form Section Styles */
+.form-section {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #FF6347;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #FF6347; /* Tomato */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #E53E28;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+
+    input, .submit-btn {
+        width: 90%;
+    }
+}
